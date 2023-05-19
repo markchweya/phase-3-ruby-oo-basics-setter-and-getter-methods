@@ -1,22 +1,24 @@
 class Dog
-  attr_accessor :name
-  attr_accessor :breed
-  def name=(name)
-    @name = name
+    attr_accessor :name
+    def name
+      @name
+    end
+  def name=(new_name)
+    @name= new_name
   end
 
-end
- 
+  
 
-  def breed=(breed)
-    @breed = breed
+  def breed
+    @breed
   end
-
+  def breed=(new_breed)
+    @breed= new_breed
+  end
+  
  
+  
 end
 
-fido = Dog.new
-fido.name = 'Fido'
-fido.breed = 'Shepherd'
 
-puts fido.name, fido.breed
+
